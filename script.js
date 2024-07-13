@@ -17,8 +17,9 @@ setInterval(updateTime, 1000);
 updateTime(); // Initial call
 
 const hamburger = document.getElementById('lines');
+const menu = document.getElementById('menu');
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('l-active'); // Toggle active class
-    document.body.classList.toggle('nav-open'); // Toggle navigation open class
+    menu.classList.toggle('show'); // Toggle menu visibility
 });

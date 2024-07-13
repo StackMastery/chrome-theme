@@ -128,7 +128,10 @@ span.line {
   transform: rotate(180deg);
   width: 20px;
 }
-
+.show{
+  display: flex !important;
+  opacity: 1 !important;
+}
 @media screen and (max-width:800px) {
     nav.menu {
       padding: 40px;
@@ -136,7 +139,8 @@ span.line {
       position: absolute;
       top: 130px;
       width: 94%;
-      display: flex;
+      display: none;
+      opacity: 0;
       justify-content: center;
       box-sizing: border-box;
       left: 50%;
